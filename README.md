@@ -1,4 +1,6 @@
 # udpxy for EdgeRouter X
+
+```
 udpxy 1.0-23.12 (prod) standard [Linux 3.10.107-UBNT mips]
 usage: udpxy [-vTS] [-a listenaddr] -p port [-m mcast_ifc_addr] [-c clients] [-l logfile] [-B sizeK] [-n nice_incr]
         -v : enable verbose output [default = disabled]
@@ -20,3 +22,4 @@ Examples:
   udpxy -a lan0 -p 4022 -m lan1
         listen for HTTP requests on interface lan0, port 4022;
         subscribe to multicast groups on interface lan1
+ ```
