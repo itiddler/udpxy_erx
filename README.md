@@ -1,6 +1,6 @@
 # udpxy for EdgeRouter X
 udpxy 1.0-23.12 (prod) standard [Linux 3.10.107-UBNT mips]
-usage: ./udpxy [-vTS] [-a listenaddr] -p port [-m mcast_ifc_addr] [-c clients] [-l logfile] [-B sizeK] [-n nice_incr]
+usage: udpxy [-vTS] [-a listenaddr] -p port [-m mcast_ifc_addr] [-c clients] [-l logfile] [-B sizeK] [-n nice_incr]
         -v : enable verbose output [default = disabled]
         -S : enable client statistics [default = disabled]
         -T : do NOT run as a daemon [default = daemon if root]
@@ -15,8 +15,8 @@ usage: ./udpxy [-vTS] [-a listenaddr] -p port [-m mcast_ifc_addr] [-c clients] [
         -n : nice value increment [default = 0]
         -M : periodically renew multicast subscription (skip if 0 sec) [default = 0 sec]
 Examples:
-  ./udpxy -p 4022
+  udpxy -p 4022
         listen for HTTP requests on port 4022, all network interfaces
-  ./udpxy -a lan0 -p 4022 -m lan1
+  udpxy -a lan0 -p 4022 -m lan1
         listen for HTTP requests on interface lan0, port 4022;
         subscribe to multicast groups on interface lan1
